@@ -1,0 +1,23 @@
+composer create-project laravel/laravel example-app
+
+composer require laravel/ui
+
+php artisan ui:auth
+
+composer require laravel/sanctum
+
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+#configure database in mysql
+
+php artisan migrate
+
+#open app/Http/Kernel.php file:
+
+'api' => [
+    \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+    
+    
+# config/cors.php
+
+	'supports_credentials' => true,

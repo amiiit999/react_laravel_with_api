@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap');
+body
+{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	font-family: Montserrat;
+	line-height: 1;
+	color: #081827;
+  font-size: 14px;
+  font-weight: 500;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.container > .center{
+  width: 400px;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.container .center > form{
+  position: relative;
+  left: 50%;
+  transform: translateX(-25%);
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.modal-header>.modal-title {
+  font-size: 14px
+}
+
+.modal-body>.body-desc {
+  font-size: 14px
+}
+
+.modal-footer>.footer-title {
+  font-size: 12px
+}
+
+#loadFile {
+  display: none
+}
+
+.modal-header>.modal-title,
+.modal-body>.body-desc,
+.modal-body>.photo-input,
+.modal-footer>.footer-title {
+  text-align: center
+}
+
+.select {
+  -webkit-appearance: menulist;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  }
+  .modal-backdrop.fade.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  }
